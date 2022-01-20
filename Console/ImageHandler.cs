@@ -2,7 +2,7 @@
 using Emgu.CV;
 using Emgu.CV.Structure;
 
-public class ImageHandler
+public static class ImageHandler
 {
     public static void CopyToImage<TColor1, TColor2, TDepth>(ref Image<TColor1, TDepth> source, ref Image<TColor2, TDepth> dst, int offsetX = 0, int offsetY = 0)
         where TColor1 : struct, IColor
